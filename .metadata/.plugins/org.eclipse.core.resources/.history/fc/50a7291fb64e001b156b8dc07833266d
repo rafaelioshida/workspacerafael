@@ -1,0 +1,53 @@
+package variaveis;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*Existem dois tipos de dados
+		 *  - alfanumerico: é o dado que NÃO VAI ser utilizado em uma expressão matemáica e 
+		 *  também nãp é um dado sensivel (muito utilizado para buscas) para o modelo de negócio;
+		 * CEP (de um colaborador do itau)
+		 * CPF (de um aluno deuma universidade)
+		 * Em Java =>String
+		 * 
+		 * 
+		 * 	- numérico: dado que PODE ser utilizado em uma expressão matemática
+		 * CEP (contexto do site dos correios)
+		 * CPF (contexto do site da receita)
+		 * Em Java => int(para numeros inteiros) e double(para números reais)
+		 * 
+		 * */
+		
+		/*
+		 * Nome da variavel = identificador
+		 * Regras
+		 * 	- 1° não começará com numero (1berto - não pode, h1berto - pode)
+		 * 	- 2° não  fará uso de palavra reservada (int - não pode, class - não pode)
+		 * 	- 3° não usuárá caracteres especiais (d@t@  - @, nome cliente - "espaço")
+		 * 
+		 * Padrões
+		 * 	- nomes significativos, evitar: x, n1, xpto
+		 * 	- começa com letra minuscula
+		 * 	- padrão CamelCase
+		 * dataNascimento(correto)
+		 * datanascimento(errado)
+		 * data_nascimento(correto)
+		 * data_Nascimento(errado)
+		 * 
+		 * */
+		
+		
+		String nome="Rafael Ioshida";
+		int idade = 30;
+		double altura = 1.73;
+		
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.print(altura);
+		
+				
+	}
+
+}

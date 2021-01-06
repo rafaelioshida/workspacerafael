@@ -1,0 +1,30 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+ /*
+  * Sintaxe do for
+  * 1º definimos o contador e valor inicial
+  * 2º condição (enquanto for verdadeiro o laço ira continuar)
+  * 3º como ocorrerá a contagem 
+  */
+		
+	/*for ( int contador=0; contador<5;contador++) {
+		System.out.println(contador);
+	}*/
+		
+	int tabuada = Integer.parseInt(JOptionPane.showInputDialog("Qual tabuada?"));
+	for (int contador = 1; contador < 11 ; contador ++ ) {
+		System.out.println(tabuada + " x " +  contador + " = " + (tabuada * contador));
+	}
+	
+	
+	
+	
+	
+	}
+
+}

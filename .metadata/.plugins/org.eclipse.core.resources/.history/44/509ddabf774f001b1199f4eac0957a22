@@ -1,0 +1,41 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisaoComposta {
+
+	public static void main(String[] args) {
+/*
+ * input: produto, qtde, valor unitario
+ * preciso avliiar o estoque:
+ * se qtde 10-20 =>valor unitario 10% de redução
+ * se qtde 5-9 =>valor unitario 5% de redução
+ * se qtde <5 =>sem redução
+ * se qtde >20 =>valor valor unitario com 12% de redução
+ * 
+ */
+		
+	String produto = JOptionPane.showInputDialog("Produto:");	
+	float qtde = Float.parseFloat(JOptionPane.showInputDialog("Quantidade:"));
+	float valoruni = Float.parseFloat(JOptionPane.showInputDialog("Valor unitário:"));
+	
+	if (qtde < 5) {
+		System.out.println("Valor do produto " + produto + " é: R$" + valoruni);
+	}else if  (qtde > 20) {
+		double qtde1 = (qtde * 0.88);
+		System.out.println("Valor do produto " + produto + " é: R$" + qtde1);
+	}else if (qtde >= 5 && qtde <=9) {
+		double qtde2 = (qtde * 0.95);
+		System.out.println("Valor do produto " + produto + " é: R$" + qtde2);
+	}else {
+		double qtde3 = (qtde * 0.9 );
+		System.out.println("Valor do produto " + produto + " é: R$" + qtde3);
+
+	}
+		
+		
+		
+		
+	}
+
+}

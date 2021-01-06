@@ -1,0 +1,46 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exerc1PPT {
+
+	public static void main(String[] args) {
+
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia: "));
+		int validadia = 1;
+		int validames = 1;
+		int validaano = 1;
+		do {
+			if ( dia >=32 || dia <=0) {
+				JOptionPane.showMessageDialog(null, "Digite um dia valido, entre 1 e 31");
+				dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia: "));
+				validadia = 0;
+			}
+			
+		}while(validadia == 0);
+		
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Digite um mes: "));
+		do {
+			if ( mes >13 || mes <=0) {
+				JOptionPane.showMessageDialog(null, "Digite um mes valido, entre 1 e 12.");
+				mes = Integer.parseInt(JOptionPane.showInputDialog("Digite um mes: "));
+				validames = 0;
+			}
+			
+		}while(validames == 0);
+		
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite um ano: "));
+		do {
+			if ( ano >=2021 || ano <=0) {
+				JOptionPane.showMessageDialog(null, "Digite um ano valido, entre 0 e 2021");
+				ano = Integer.parseInt(JOptionPane.showInputDialog("Digite um ano: "));
+				validaano = 0;
+			}
+			
+		}while(validaano == 0);
+		JOptionPane.showMessageDialog(null, "A data digitada é:" + dia + "/" + mes + "/" + ano + ".");
+		
+		
+	}
+
+}

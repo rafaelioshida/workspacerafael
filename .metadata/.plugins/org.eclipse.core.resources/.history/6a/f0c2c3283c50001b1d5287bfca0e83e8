@@ -1,0 +1,20 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Exerc1PPT {
+
+	public static void main(String[] args) {
+
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia: "));
+		do {
+			if ( dia>32 || dia<0) {
+				JOptionPane.showMessageDialog(null, "Digite um dia valido, entre 1 e 31");
+				dia = 0;
+				dia = Integer.parseInt(JOptionPane.showInputDialog("Digite um dia: "));
+			}
+		}while(dia == 0);
+		
+	}
+
+}

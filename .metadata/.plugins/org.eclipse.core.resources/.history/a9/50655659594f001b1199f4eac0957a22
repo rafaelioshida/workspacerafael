@@ -1,0 +1,47 @@
+package variaveis;
+
+public class TipoString {
+
+	public static void main(String[] args) {
+
+		// String => é um tipo de referencia
+		// Date => é um tipo de referenia
+		
+		String email = "TestE123456@ServidoR.cOm.br";
+		System.out.println("Original: " + email);
+		System.out.println("Maiusculo: " + email.toUpperCase());
+		System.out.println("Minusculo: " + email.toLowerCase());
+		//lenght() => retorna qtde de caracteres da string
+		System.out.println("Qtde caracteres: "+ email.length());
+		//contais() => retorna true/false sobre existencia ou não do caracter
+		System.out.println("Tem @? " + email.contains("@"));
+		//indexOf() => retorna a POSIÇÂO do caracter ou da substring
+		//t e s t e
+		//0 1 2 3 4
+		//Obs.: Se caracter pesquisa não existir o resultado será "-1"
+		System.out.println("Posição do @: " + email.indexOf("@"));
+		//substring() => retorna parte da string com base nas coordenadas: inicial e final
+		System.out.println("Do 2º ao 5º caracter:" + email.substring(1,5));
+		System.out.println("A partir do 3º" + email.substring(2,email.length()));
+		//exibir somente usuário
+		System.out.println("Somente usuário: " + email.substring(0,email.indexOf("@")));
+		//exibir somente servidor
+		System.out.println("Soment servidor: " + email.substring(email.indexOf("@"), email.indexOf("."))));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

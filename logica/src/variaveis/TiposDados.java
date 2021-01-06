@@ -1,0 +1,65 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*Existem dois tipos de dados
+		 *  - alfanumerico: é o dado que NÃO VAI ser utilizado em uma expressão matemáica e 
+		 *  também nãp é um dado sensivel (muito utilizado para buscas) para o modelo de negócio;
+		 * CEP (de um colaborador do itau)
+		 * CPF (de um aluno deuma universidade)
+		 * Em Java =>String
+		 * 
+		 * 
+		 * 	- numérico: dado que PODE ser utilizado em uma expressão matemática
+		 * CEP (contexto do site dos correios)
+		 * CPF (contexto do site da receita)
+		 * Em Java => int(para numeros inteiros) e double(para números reais)
+		 * 
+		 * */
+		
+		/*
+		 * Nome da variavel = identificador
+		 * Regras
+		 * 	- 1° não começará com numero (1berto - não pode, h1berto - pode)
+		 * 	- 2° não  fará uso de palavra reservada (int - não pode, class - não pode)
+		 * 	- 3° não usuárá caracteres especiais (d@t@  - @, nome cliente - "espaço")
+		 * 
+		 * Padrões
+		 * 	- nomes significativos, evitar: x, n1, xpto
+		 * 	- começa com letra minuscula
+		 * 	- padrão CamelCase
+		 * dataNascimento(correto)
+		 * datanascimento(errado)
+		 * data_nascimento(correto)
+		 * data_Nascimento(errado)
+		 * 
+		 * */
+		
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome") ;
+		/*
+		 * Tipos numericos são primitivos, para apoia-los, usamos classes wrappers.
+		 * int=>Integer
+		 * double=>Double
+		 * short=>Short
+		 * boolean=>Boolean
+		 * */
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade")) ;
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite sua altura"));
+		double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite seu peso"));
+		double imc = peso / (altura * altura);
+
+
+		System.out.println("Nome:" + nome);
+		System.out.println("Idade:" + idade);
+		System.out.println("Altura:" + altura);
+		System.out.println("IMC:" + imc);
+				
+	}
+
+}
